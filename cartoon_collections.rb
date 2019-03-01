@@ -25,9 +25,9 @@ end
 def find_the_cheese(names)
   string = ""
   cheese_types = ["cheddar", "gouda", "camembert"]
-    names.each_with_index do |n, index|
-      if names[index] == "cheddar" || names[index] == "gouda" || names[index] == "camembert"
-       string += "#{names[index]}"
+    names.each_with_index do |n, i|
+      if names[i] == "cheddar" || names[i] == "gouda" || names[i] == "camembert"
+       string += "#{names[i]}"
        return string
        end
     end
