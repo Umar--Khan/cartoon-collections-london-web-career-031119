@@ -30,6 +30,6 @@ def find_the_cheese(names)
        string += "#{n}"
        return string
        end
-    end
+     end
     nil
   end
