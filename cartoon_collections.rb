@@ -24,12 +24,15 @@ end
 
 def find_the_cheese(names)
   string = ""
+  counter = 0
   cheese_types = ["cheddar", "gouda", "camembert"]
-    names.each_with_index do |n, i|
-      if names[i] == "cheddar" || names[i] == "gouda" || names[i] == "camembert"
-       string += "#{names[i]}"
+    names.each_with_index do |n, index|
+      if n.include? cheese_types[counter]
+       string += "#{n}"
        return string
+       else
+       counter += 1
        end
-    end
+      end
     nil
   end
